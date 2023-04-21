@@ -5,6 +5,10 @@
 	"main": "dist/point-system-vue.umd.js",
 	"module": "dist/point-system-vue.esm.js",
 	"unpkg": "dist/point-system-vue.min.js",
+	"files": [
+		"dist",
+		"src"
+	],
 	"scripts": {
 		"serve": "vue-cli-service serve",
 		"test": "npm run test:unit && npm run test:lint",
