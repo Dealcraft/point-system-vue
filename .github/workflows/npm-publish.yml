@@ -13,6 +13,7 @@ on:
 
 jobs:
   publish-npm:
+    needs: ${{ github.repository }}/.github/workflows/node-tests.yml@main
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
