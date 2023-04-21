@@ -1,18 +1,18 @@
 export function install() {
-  if (install.installed) return;
-  install.installed = true;
+	if (install.installed) return;
+	install.installed = true;
 }
 
 const plugin = {
-  install,
+	install,
 };
 
 let GlobalVue = null;
 if (typeof window !== "undefined") {
-  GlobalVue = window.Vue;
+	GlobalVue = window.Vue;
 } else if (typeof global !== "undefined") {
-  GlobalVue = global.Vue;
+	GlobalVue = global.Vue;
 }
 if (GlobalVue) {
-  GlobalVue.use(plugin);
+	GlobalVue.use(plugin);
 }
