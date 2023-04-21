@@ -12,6 +12,7 @@ on:
 
 jobs:
     build:
+        needs: ${{ github.repository }}/.github/workflows/node-tests.yml@main
         runs-on: ubuntu-latest
         permissions:
             contents: read
